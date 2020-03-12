@@ -1,77 +1,39 @@
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-    #primary { width:67%; }
-    #secondary { width:30%; margin-left:3%;}
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
-    #primary { width:100%; }
-    #secondary { width:100%; margin:0; border:none; }
-}
-
-img { max-width: 100%; height: auto; }
-
-html { font-size:100%; }
-
-/* @media (min-width: 640px) { body {font-size:1rem;} }
-@media (min-width:960px) { body {font-size:1.2rem;} }
-@media (min-width:1100px) { body {font-size:1.5rem;} } */
-
 body {
   font-family: Arial;
-  padding: 100px;
-  margin: 0;
+  padding: 5% 10% 5% 15%;
   background-color: #f4f4ff;
+  text-align: center;
 }
 
-.calculations {
+.container {
   height: 70vh;
   width: 30%;
   float: left;
-  border: 1px solid black;
-  padding: 30px;
-  text-align: center;
+  border: 5px solid #f4f4ff;
   background-color: white;
   overflow: hidden;
+  padding: 0;
 }
 
-.calculations input {
-  width: 20vw;
+.calculations {
+  padding: 4%;
 }
 
-.hybrid {
-  height: 70vh;
-  width: 25%;
-  position: center;
-  float: left;
-  border: 1px solid black;
-  margin: auto;
-  padding: 30px;
-  background-color: white;
-  overflow: hidden;
-}
-
-.hybrid img {
-  height: 30vh;
+img {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-.petrol {
-  height: 70vh;
-  width: 25%;
-  float: left;
-  border: 1px solid black;
-  padding: 30px;
-  background-color: white;
-  overflow: hidden;
+h5 {
+  color: grey;
 }
 
-.petrol img {
-  height: 30vh;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+h3 {
+  font-family: monospace;
+}
+
+.calculations h3 {
+  font-family: fantasy;
 }

@@ -2,48 +2,49 @@
 <html>
 
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="HandheldFriendly" content="true">
   <meta charset="UTF-8">
   <title>Fuel cost calculator</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="hybrid">
-    <img src='./img/hybryda.jpeg'>
-    <h2>Vehicle</h2>
-    <h4>Mercedes-Benz S 560 e (hybrid)</h4>
-    <h2>Price</h2>
-    <h4>520 000 zł</h4>
-    <h2>Average fuel consumption</h2>
-    <h4>City: 4l/100km<br>Motorway: 7l/100km</h4>
+  <div class="container">
+    <img src='./img/hybryda.jpeg'><br>
+    <h5>Vehicle (hybrid)</h5>
+    <h3>Mercedes-Benz S 560 e</h3>
+    <h5>Price</h5>
+    <h3>520 000 zł</h3>
+    <h5>Average fuel consumption</h5>
+    <h3>City: 4l/100km<br>Motorway: 7l/100km</h3>
   </div>
-  <div class="petrol">
-    <img src='./img/petrol.jpg'>
-    <h2>Vehicle</h2>
-    <h4>Mercedes-benz S 450 (petrol)</h4>
-    <h2>Price</h2>
-    <h4>468 500 zł</h4>
-    <h2>Average fuel consumption</h2>
-    <h4>City: 8l/100km<br>Motorway: 5l/100km</h4>
+  <div class="container">
+    <img src='./img/petrol.jpg'><br>
+    <h5>Vehicle (petrol)</h5>
+    <h3>Mercedes-benz S 450</h3>
+    <h5>Price</h5>
+    <h3>468 500 zł</h3>
+    <h5>Average fuel consumption</h5>
+    <h3>City: 8l/100km<br>Motorway: 5l/100km</h3>
   </div>
-  <div class="calculations">
+  <div class="container calculations">
     <form>
-      <label for="cityMileage">City mileage (per month)</label><br><br>
+      <label for="cityMileage">
+        <h5>City mileage</h5>
+      </label><br><br>
       <output id="cityMileageOutput">0 km</output><br>
-      <input type="range" id="cityMileage" value="0" min="0" max="20000" oninput="cityMileageOutput.value = cityMileage.value + ' km'"><br>
-      <label for="motorwayMileage">Motorway mileage (per month)</label><br><br>
+      <input type="range" class="custom-range" id="cityMileage" value="0" min="0" max="20000" oninput="cityMileageOutput.value = cityMileage.value + ' km'"><br>
+      <label for="motorwayMileage">
+        <h5>Motorway mileage</h5>
+      </label><br><br>
       <output id="motorwayMileageOutput">0 km</output><br>
-      <input type="range" id="motorwayMileage" value="0" min="0" max="20000" oninput="motorwayMileageOutput.value = motorwayMileage.value + ' km'"><br>
+      <input type="range" class="custom-range" id="motorwayMileage" value="0" min="0" max="20000" oninput="motorwayMileageOutput.value = motorwayMileage.value + ' km'"><br>
     </form>
-    <h2>Monthly fuel cost advantage:</h2>
+    <h5>Fuel cost advantage:</h5>
     <h3 id='cost-advantage'>0 zł</h3>
-    <h2>Engine:</h2>
+    <h5>Engine:</h5>
     <h3 id='car'></h3>
   </div>
-
   <script src="script.js"></script>
 </body>
 
